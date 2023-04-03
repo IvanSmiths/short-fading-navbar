@@ -52,3 +52,30 @@ main {
   padding: 2.5rem;
   margin-top: 10rem;
 }
+
+.navbar {
+  opacity: 1;
+  background-color: var(--black);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 50px;
+  padding: 0 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: flex;
+  width: 25px;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.hamburger div {
+  padding: 0.5px;
+  width: 100%;
+  background-color: var(--white);
+}

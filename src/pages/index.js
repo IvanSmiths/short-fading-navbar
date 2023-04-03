@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar'
 import { Roboto } from 'next/font/google'
 
 const roboto = Roboto({
@@ -8,6 +9,7 @@ const roboto = Roboto({
 export default function Home() {
   return (
     <main className={roboto.className}>
+      <Navbar />
       <div className='hero'>
         <h1>Lorem ipsum dolor sit amet</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi consequatur numquam quis explicabo corrupti nostrum voluptate a deserunt alias!</p>
