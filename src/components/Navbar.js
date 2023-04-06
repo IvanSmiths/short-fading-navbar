@@ -8,7 +8,8 @@ function Navbar() {
     const navbarRef = useRef(null)
 
     useEffect(() => {
-        const showNav = gsap.fromTo(navbarRef.current, {
+        const showNav = gsap.fromTo(
+            navbarRef.current, {
             opacity: 0,
         }, {
             opacity: 1,
@@ -18,7 +19,9 @@ function Navbar() {
             start: "top top",
             end: "max",
             onUpdate: (self) => {
-                self.direction === -1 ? showNav.play() : showNav.reverse()
+                self.direction === -1 ?
+                    showNav.play()
+                    : showNav.reverse()
             }
         });
     }, [])
